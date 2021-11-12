@@ -67,11 +67,7 @@ load_config() {
 # generate a temporary file with rsync filter list for repo sync
 gen_repo_filter() {
 	local tmp_file="$(mktemp)"
-	local _dir _dirs=(core extra testing staging
-		community community-testing community-staging
-		multilib multilib-testing multilib-staging
-		kde-unstable gnome-unstable
-		pool sources)
+	local _dir _dirs=(aarch64 arm armv6h armv7h)
 	for _dir in "${_dirs[@]}"; do
 		echo "+ /$_dir/" >> "$tmp_file"
 	done
@@ -217,8 +213,8 @@ repo_packages_index() {
 iso_rsync() {
 	msg "Rsyncing ISO"
 
-	local ISO_RSYNC="$ARCHIVE_RSYNC/iso/"
-	local ISO_DIR="$ARCHIVE_DIR/iso"
+	local ISO_RSYNC="$ARCHIVE_RSYNC/os/"
+	local ISO_DIR="$ARCHIVE_DIR/os"
 
 	# ensure destination exists
 	[[ -d "$ISO_DIR" ]] || mkdir -p "$ISO_DIR"
