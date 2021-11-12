@@ -5,9 +5,9 @@ pkgver="$(git log --pretty=format:''|wc -l)"
 pkgrel=1
 pkgdesc='Archlinux Archive Tools (Git version)'
 arch=('any')
-url='https://github.com/seblu/archivetools'
+url='https://github.com/ad24cz/archivetools'
 license=('GPL2')
-depends=('rsync' 'hardlink' 'xz' 'util-linux')
+depends=('rsync' 'hardlink' 'xz' 'util-linux' 'pacman-contrib')
 conflicts=('archivetools')
 backup=('etc/archive.conf')
 install=archivetools.install
