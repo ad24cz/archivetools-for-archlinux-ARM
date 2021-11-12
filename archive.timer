@@ -2,7 +2,7 @@
 Description=Daily Archive Update
 
 [Timer]
-OnCalendar=12:42:00
+OnCalendar=12:24:00
 AccuracySec=1m
 Persistent=true
 
