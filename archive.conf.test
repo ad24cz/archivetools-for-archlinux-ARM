@@ -1,7 +1,7 @@
 # vim:set sw=2 ts=2 ft=sh et:
 
 # Global
-ARCHIVE_RSYNC='rsync://polymorf.fr/archlinux/'
+ARCHIVE_RSYNC='rsync://de3.mirror.archlinuxarm.org/archlinux-arm/'
 ARCHIVE_DIR="$PWD/archive-root"
 ARCHIVE_USER=$(id -u -n)
 ARCHIVE_GROUP=$(id -g -n)
