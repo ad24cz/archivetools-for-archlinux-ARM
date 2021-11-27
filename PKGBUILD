@@ -3,7 +3,7 @@
 pkgname=archivetools-git
 pkgver="$(git log --pretty=format:''|wc -l)"
 pkgrel=1
-pkgdesc='Archlinux Archive Tools (Git version)'
+pkgdesc='Archlinux ARM Archive Tools (Git version)'
 arch=('any')
 url='https://github.com/ad24cz/archivetools'
 license=('GPL2')
