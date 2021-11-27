@@ -1,5 +1,9 @@
-Arch Linux Archive Tools
-========================
+Arch Linux ARM Archive Tools
+============================
+
+Introduction
+------------
+This repo is adapted for use with archlinux ARM. The details below are valid, but remmeber to change some details to ARM mirrors etc.
 
 Introduction
 ------------
