@@ -5,7 +5,7 @@ ARCHIVE_RSYNC='rsync://de3.mirror.archlinuxarm.org/archlinux-arm/'
 ARCHIVE_DIR="$PWD/archive-root"
 ARCHIVE_USER=$(id -u -n)
 ARCHIVE_GROUP=$(id -g -n)
-PKGEXT='.pkg.tar.xz'
+PKGEXT='.pkg.tar.?(gz|bz2|xz|zst|lrz|lzo|Z|lz4|lz)?'
 PKGSIG="$PKGEXT.sig"
 UMASK=022
 
@@ -17,6 +17,6 @@ REPO_PACKAGES_INDEX=1
 REPO_PACKAGES_FULL_SEARCH=0
 REPO_RSYNC_TIMEOUT=10
 
-# ISO
-ARCHIVE_ISO=1
+# ISO # This section is not valid for archlinux ARM
+ARCHIVE_ISO=0
 ISO_RSYNC_TIMEOUT=5

@@ -67,7 +67,7 @@ load_config() {
 # generate a temporary file with rsync filter list for repo sync
 gen_repo_filter() {
 	local tmp_file="$(mktemp)"
-	local _dir _dirs=(aarch64 arm armv6h armv7h)
+	local _dir _dirs=(aarch64 arm armv6h armv7h os)
 	for _dir in "${_dirs[@]}"; do
 		echo "+ /$_dir/" >> "$tmp_file"
 	done
