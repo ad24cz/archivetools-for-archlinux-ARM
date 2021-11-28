@@ -17,7 +17,7 @@ Create a pacman package and install it.
 
 ```
 cd archivetools
-makepkg -si
+makepkg -i
 systemctl enable archive.timer
 ```
 
