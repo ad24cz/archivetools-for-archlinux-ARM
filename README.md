@@ -11,7 +11,7 @@ The **Archive** is built by rsync'ing [rsync.archlinux.org](rsync://rsync.archli
 
 Installation
 ------------
-Create a pacman package and install it.
+Create a pacman package and install it. Before the installation, install all dependencies.
 
 ```
 cd archivetools
