@@ -35,8 +35,15 @@ Dependencies
 - [Hardlink](http://jak-linux.org/projects/hardlink/)
 - [xz](http://tukaani.org/xz/)
 - [util-linux](https://www.kernel.org/pub/linux/utils/util-linux/)
+- [systemd](https://systemd.io)
+- [pacman-contrib](https://gitlab.archlinux.org/pacman/pacman-contrib)
 
 Sources
+-------
+**arm archivetools** sources are available on [AD24 gitea](https://git.ad24.app/AD24/archivetools-for-archlinux-ARM).
+
+
+Original Sources
 -------
 **archivetools** sources are available on [github](https://github.com/seblu/archivetools/).
 
