@@ -153,7 +153,7 @@ repo_packages() {
 
 	# create new links pass
 	msg2 'creating new links'
-	find "$SCANDIR" -type f -name "*$PKGEXT" -o -name "*$PKGSIG"| while read src; do
+	find "$SCANDIR" -type f -regex "$PKGEXT" -o -regex "$PKGSIG"| while read src; do
 	  filename="${src##*/}"
 	  pkgname="${filename%-*}" #remove arch and extension
 	  pkgname="${pkgname%-*}" #remove pkgrel
